@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean  id="a1" class="com.rasagna.java.Address">
+<constructor-arg value="Korlagunta"/>
+<constructor-arg value="Tirupathi"/>
+<constructor-arg value="Andhra Pradesh"/>
+<constructor-arg value="517501"/>
+<constructor-arg value="India"/>
+</bean>
+
+
+<bean  id="c1" class="com.rasagna.java.Customer">
+<constructor-arg value="100"/>
+<constructor-arg value="Rasagna"/>
+<constructor-arg value="9885086378"/>
+<constructor-arg value="Tirupathi"/>
+<constructor-arg ref="a1"/>
+</bean>
+
+</beans>
